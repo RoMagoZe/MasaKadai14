@@ -11,8 +11,4 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var inputTextField: UITextField!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 }

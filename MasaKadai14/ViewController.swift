@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     private let fruit = Fruits()
     private let checkMark = UIImage(named: "check-mark")
 
-    var addLabels: [(String, Bool)] = []
+    private var addLabels: [(String, Bool)] = []
 
     @IBAction func save(segue: UIStoryboardSegue) {
         let secondVC = segue.source as? SecondViewController
