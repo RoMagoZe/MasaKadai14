@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBAction func save(segue: UIStoryboardSegue) {
         let secondVC = segue.source as? SecondViewController
 
-        if let label = secondVC?.inputTextField.text {
+        if let label = secondVC?.getInputText() {
             addLabels.append((label, false))
             tableView.reloadData()
         }

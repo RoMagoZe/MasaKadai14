@@ -9,6 +9,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet private weak var inputTextField: UITextField!
 
+    // inputTextFieldの値を反映させるメソッド
+    func getInputText() -> String {
+        return inputTextField.text ?? ""
+    }
 }
