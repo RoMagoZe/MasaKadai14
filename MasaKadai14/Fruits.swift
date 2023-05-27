@@ -11,7 +11,7 @@ struct Fruits {
     // KeyValuePairsはイミュータブル（変更不可）な型であるため要素を追加できない
     // let fruits: KeyValuePairs = ["りんご": false, "みかん": true, "バナナ": false, "パイナップル": true]
 
-    let fruits: [(String, Bool)] = [("りんご", false),
+    static let defaultItems: [(String, Bool)] = [("りんご", false),
                                     ("みかん", true),
                                     ("バナナ", false),
                                     ("パイナップル", true)]
